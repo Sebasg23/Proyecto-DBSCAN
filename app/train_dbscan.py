@@ -5,40 +5,38 @@ import seaborn as sns
 
 from sklearn.cluster import DBSCAN
 from sklearn.preprocessing import StandardScaler
+
 import joblib
 
-# Cargar datos
-df = pd.read_csv("data/Mall_Customers.csv")
+# Cargar dataset
+df = pd.read_csv("data/CC GENERAL.csv")
 
-# Seleccionar columnas
-X = df[['Annual Income (k$)', 'Spending Score (1-100)']]
+# Ver primeras filas
+print(df.head())
+
+# Eliminar ID
+df = df.drop("CUST_ID", axis=1)
+
+# Eliminar valores nulos
+df = df.dropna()
 
 # Escalar datos
 scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
+X_scaled = scaler.fit_transform(df)
 
 # Crear modelo DBSCAN
-dbscan = DBSCAN(eps=0.5, min_samples=5)
+model = DBSCAN(eps=1.5, min_samples=5)
 
 # Entrenar modelo
-clusters = dbscan.fit_predict(X_scaled)
+clusters = model.fit_predict(X_scaled)
 
-# Guardar clusters
-df['Cluster'] = clusters
+# Agregar clusters
+df["Cluster"] = clusters
+
+# Mostrar clusters encontrados
+print(df["Cluster"].value_counts())
 
 # Guardar modelo
-joblib.dump(dbscan, 'models/dbscan_model.joblib')
+joblib.dump(model, "models/dbscan_model.joblib")
 
-# Mostrar gráfico
-plt.figure(figsize=(8,6))
-sns.scatterplot(
-    x=df['Annual Income (k$)'],
-    y=df['Spending Score (1-100)'],
-    hue=df['Cluster'],
-    palette='Set1'
-)
-
-plt.title("DBSCAN Clustering")
-plt.show()
-
-print("MODELO GUARDADO CORRECTAMENTE")
+print("MODELO GUARDADO")
