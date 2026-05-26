@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import joblib
 
 # CARGAR DATASET
-df = pd.read_csv("data/CC GENERAL.csv")
+df = pd.read_csv("data/Raw/CC GENERAL.csv")
 
 # MOSTRAR PRIMERAS FILAS
 print(df.head())
