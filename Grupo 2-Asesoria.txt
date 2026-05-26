@@ -14,9 +14,14 @@ Estado del Modelo:
 - Motivo: DBSCAN encontró menos de dos clusters válidos sin contar el ruido.
 
 Estado de la Aplicación:
-- Framework: Streamlit
-- Estado: Funcionando localmente
-- Falta: 
+
+- Framework utilizado: Streamlit.
+- Archivo principal de la aplicación:
+  app/app.py
+- Estado actual:
+  La aplicación web se encuentra funcionando localmente en versión inicial. Actualmente permite cargar el modelo DBSCAN entrenado y 
+  serializado, junto con el scaler utilizado durante el preprocesamiento de los datos.
+
 
 Despliegue Planificado:
 - Servicio: Streamlit Cloud
