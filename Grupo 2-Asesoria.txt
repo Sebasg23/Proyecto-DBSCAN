@@ -1,0 +1,47 @@
+Grupo 2 - Actividad 3 - Asesoría de Avances
+
+URL Repositorio: https://github.com/Sebasg23/Proyecto-DBSCAN
+Algoritmo: DBSCAN
+Problema: Segmentación de clientes de tarjetas de crédito mediante DBSCAN
+Dataset: Credit Card Dataset (Kaggle, 8950 registros)
+
+Estado del Modelo:
+- Modelo entrenado: SÍ
+- Cantidad de clusters encontrados: 1
+- Cantidad de clientes atípicos: 386
+- Porcentaje de clientes atípicos: 4.31 %
+- No se calcularon Silhouette Score ni Davies-Bouldin Score.
+- Motivo: DBSCAN encontró menos de dos clusters válidos sin contar el ruido.
+
+Estado de la Aplicación:
+- Framework: Streamlit
+- Estado: Funcionando localmente
+- Falta: 
+
+Despliegue Planificado:
+- Servicio: Streamlit Cloud
+- Fecha estimada: 03/05/2026
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
