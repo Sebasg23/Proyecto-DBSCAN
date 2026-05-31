@@ -58,7 +58,7 @@ El modelo no se limita a mostrar un número de cluster, sino que busca traducir 
 
 - **Features utilizadas:**
 
-| Dato original | Nombre entendible |
+| Dato original | Nombre |
 |---|---|
 | `RevolvingUtilizationOfUnsecuredLines` | Uso de crédito disponible |
 | `age` | Edad del cliente |
