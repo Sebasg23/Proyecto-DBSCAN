@@ -1,17 +1,29 @@
 Grupo 2 - Actividad 3 - Asesoría de Avances
 
 URL Repositorio: https://github.com/Sebasg23/Proyecto-DBSCAN
+
 Algoritmo: DBSCAN
-Problema: Segmentación de clientes de tarjetas de crédito mediante DBSCAN
-Dataset: Credit Card Dataset (Kaggle, 8950 registros)
+
+Problema: Segmentación de clientes para análisis de riesgo crediticio mediante DBSCAN
+
+Dataset: Give Me Some Credit - Kaggle
+
+Descripción del dataset:
+El dataset contiene información financiera de clientes, incluyendo variables relacionadas con edad, ingreso mensual, nivel de endeudamiento, uso de crédito disponible, líneas de crédito abiertas, historial de mora y dependientes económicos. El objetivo es utilizar estas variables para identificar perfiles financieros similares y detectar clientes atípicos que puedan representar un posible riesgo crediticio.
 
 Estado del Modelo:
 - Modelo entrenado: SÍ
-- Cantidad de clusters encontrados: 1
-- Cantidad de clientes atípicos: 386
-- Porcentaje de clientes atípicos: 4.31 %
-- No se calcularon Silhouette Score ni Davies-Bouldin Score.
-- Motivo: DBSCAN encontró menos de dos clusters válidos sin contar el ruido.
+- Algoritmo utilizado: DBSCAN
+- Dataset utilizado: data/raw/cs-training.csv
+- Archivo del modelo serializado: models/dbscan_model.pkl
+- Archivo del scaler serializado: models/scaler.pkl
+- Archivo de información del modelo: models/model_info.pkl
+- Cantidad de clusters encontrados: 4
+- Cantidad de clientes atípicos: 630
+- Porcentaje de clientes atípicos: 6.3 %
+- Silhouette Score: 0.2012
+- Davies-Bouldin Score: 1.2135
+
 
 Estado de la Aplicación:
 
@@ -19,34 +31,10 @@ Estado de la Aplicación:
 - Archivo principal de la aplicación:
   app/app.py
 - Estado actual:
-  La aplicación web se encuentra funcionando localmente en versión inicial. Actualmente permite cargar el modelo DBSCAN entrenado y 
-  serializado, junto con el scaler utilizado durante el preprocesamiento de los datos.
-
+  La aplicación web se encuentra funcionando localmente en versión inicial. Actualmente permite cargar el modelo DBSCAN entrenado y serializado, junto con el scaler utilizado durante el preprocesamiento de los datos.
+  
+  La aplicación permite ingresar información financiera de un cliente y obtener una interpretación útil del resultado, no solamente el número del cluster. El resultado se traduce en perfiles como cliente viable, cliente de alto riesgo o cliente atípico que requiere revisión manual.
 
 Despliegue Planificado:
 - Servicio: Streamlit Cloud
 - Fecha estimada: 03/05/2026
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
