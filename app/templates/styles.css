@@ -900,3 +900,102 @@ hr {
         padding: 28px 20px;
     }
 }
+.section-header {
+    background: linear-gradient(135deg, #f8fbff 0%, #eef6ff 100%);
+    border: 1px solid #cfe3ff;
+    border-radius: 18px;
+    padding: 1.5rem 1.6rem;
+    margin-bottom: 1.4rem;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.section-header h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 1.55rem;
+    font-weight: 800;
+}
+
+.section-header p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: #334155;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+/* ==============================
+   TARJETAS DE FORMULARIO
+============================== */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: linear-gradient(135deg, #f8fbff 0%, #eef6ff 100%) !important;
+    border: 1px solid #cfe3ff !important;
+    border-radius: 18px !important;
+    padding: 1.2rem 1.2rem 1rem 1.2rem !important;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* Evita bordes internos raros */
+div[data-testid="stVerticalBlockBorderWrapper"] > div {
+    border: none !important;
+}
+
+/* Títulos dentro de tarjetas */
+div[data-testid="stVerticalBlockBorderWrapper"] h4 {
+    color: #0f172a;
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"] h5 {
+    color: #1e293b;
+    font-size: 0.95rem;
+    font-weight: 800;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Labels */
+div[data-testid="stWidgetLabel"] label {
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 0.84rem;
+}
+
+/* Inputs */
+div[data-testid="stNumberInput"] input {
+    border-radius: 10px !important;
+    background: white !important;
+}
+
+/* Espaciado sliders */
+div[data-testid="stSlider"] {
+    padding-top: 0.15rem;
+    padding-bottom: 0.4rem;
+}
+
+/* Botón principal */
+div.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 14px !important;
+    height: 3rem;
+    font-weight: 800;
+    font-size: 0.95rem;
+    box-shadow: 0 10px 22px rgba(249, 115, 22, 0.28);
+}
+
+div.stButton > button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    color: white !important;
+    border: none !important;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 1.6rem;
+    border: none;
+    border-top: 1px solid #d8e2ee;
+}
