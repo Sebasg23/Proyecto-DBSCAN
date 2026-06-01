@@ -374,6 +374,8 @@ def obtener_interpretacion(cluster: int, valores: dict) -> dict:
 # BARRA DE NAVEGACIÓN SUPERIOR
 # Se implementa con HTML/CSS inyectado para simular una navbar tipo fintech.
 # ------------------------------------------------------------------------------
+
+st.markdown("---")
 st.markdown("""
 <nav class="navbar">
   <div class="navbar-brand">
