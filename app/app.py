@@ -598,7 +598,7 @@ with col_form2:
 # Botón de evaluación
 col_btn1, col_btn2, col_btn3 = st.columns([2, 1, 2])
 with col_btn2:
-    evaluar = st.button("🔍 Evaluar cliente", use_container_width=True, type="primary")
+    evaluar = st.button("Evaluar cliente", use_container_width=True, type="primary")
 
 # ==============================================================================
 # LÓGICA DE EVALUACIÓN
