@@ -38,7 +38,7 @@ PROJECT_ROOT = os.path.dirname(BASE_DIR)
 MODEL_PATH   = os.path.join(PROJECT_ROOT, "models", "dbscan_model.pkl")
 SCALER_PATH  = os.path.join(PROJECT_ROOT, "models", "scaler.pkl")
 INFO_PATH    = os.path.join(PROJECT_ROOT, "models", "model_info.pkl")
-CSS_PATH     = os.path.join(BASE_DIR, "templates\styles.css")
+CSS_PATH     = os.path.join(BASE_DIR, "templates/styles.css")
 
 # ------------------------------------------------------------------------------
 # CARGA DEL CSS EXTERNO
